@@ -44,3 +44,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+
+
+// MARK: - Internal Properties
+
+// MARK: - Private Properties
+
+// MARK: - Initalizers
+
+// MARK: - UIViewController
+
+// MARK: - Internal Methods
+
+// MARK: - Private Methods

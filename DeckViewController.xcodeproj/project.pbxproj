@@ -14,6 +14,12 @@
 		C19ED6721BC63F4A00AACA71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19ED6701BC63F4A00AACA71 /* LaunchScreen.storyboard */; };
 		C19ED67D1BC63F4A00AACA71 /* DeckViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19ED67C1BC63F4A00AACA71 /* DeckViewControllerTests.swift */; };
 		C19ED6881BC63F4A00AACA71 /* DeckViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19ED6871BC63F4A00AACA71 /* DeckViewControllerUITests.swift */; };
+		C19ED6961BC640FE00AACA71 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19ED6951BC640FE00AACA71 /* FeedViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C19ED6981BC6429D00AACA71 /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19ED6971BC6429D00AACA71 /* DeckViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C1CB6A741BC762F600462C0D /* CardPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CB6A731BC762F600462C0D /* CardPresentationController.swift */; settings = {ASSET_TAGS = (); }; };
+		C1CB6A761BC7630E00462C0D /* CardTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CB6A751BC7630E00462C0D /* CardTransitioningDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		C1CB6A781BC7633800462C0D /* CardTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CB6A771BC7633800462C0D /* CardTransitionAnimator.swift */; settings = {ASSET_TAGS = (); }; };
+		C1DCFCAD1BC7CE6B00CE10EA /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCFCAC1BC7CE6B00CE10EA /* CardViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		C19ED6831BC63F4A00AACA71 /* DeckViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeckViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19ED6871BC63F4A00AACA71 /* DeckViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckViewControllerUITests.swift; sourceTree = "<group>"; };
 		C19ED6891BC63F4A00AACA71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19ED6951BC640FE00AACA71 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		C19ED6971BC6429D00AACA71 /* DeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
+		C1CB6A731BC762F600462C0D /* CardPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPresentationController.swift; sourceTree = "<group>"; };
+		C1CB6A751BC7630E00462C0D /* CardTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTransitioningDelegate.swift; sourceTree = "<group>"; };
+		C1CB6A771BC7633800462C0D /* CardTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTransitionAnimator.swift; sourceTree = "<group>"; };
+		C1DCFCAC1BC7CE6B00CE10EA /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C14D403D1BCB1FEC0059BA0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C19ED66B1BC63F4A00AACA71 /* Main.storyboard */,
+				C19ED6701BC63F4A00AACA71 /* LaunchScreen.storyboard */,
+				C19ED6731BC63F4A00AACA71 /* Info.plist */,
+				C19ED66E1BC63F4A00AACA71 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		C19ED65B1BC63F4900AACA71 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +120,15 @@
 		C19ED6661BC63F4900AACA71 /* DeckViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C1CB6A701BC762C100462C0D /* Presentation Controllers */,
+				C1CB6A711BC762D000462C0D /* Transitioning Delegates */,
+				C1CB6A721BC762D600462C0D /* Animators */,
+				C14D403D1BCB1FEC0059BA0A /* Resources */,
 				C19ED6671BC63F4900AACA71 /* AppDelegate.swift */,
 				C19ED6691BC63F4900AACA71 /* ViewController.swift */,
-				C19ED66B1BC63F4A00AACA71 /* Main.storyboard */,
-				C19ED66E1BC63F4A00AACA71 /* Assets.xcassets */,
-				C19ED6701BC63F4A00AACA71 /* LaunchScreen.storyboard */,
-				C19ED6731BC63F4A00AACA71 /* Info.plist */,
+				C19ED6951BC640FE00AACA71 /* FeedViewController.swift */,
+				C19ED6971BC6429D00AACA71 /* DeckViewController.swift */,
+				C1DCFCAC1BC7CE6B00CE10EA /* CardViewController.swift */,
 			);
 			path = DeckViewController;
 			sourceTree = "<group>";
@@ -123,6 +149,30 @@
 				C19ED6891BC63F4A00AACA71 /* Info.plist */,
 			);
 			path = DeckViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		C1CB6A701BC762C100462C0D /* Presentation Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1CB6A731BC762F600462C0D /* CardPresentationController.swift */,
+			);
+			name = "Presentation Controllers";
+			sourceTree = "<group>";
+		};
+		C1CB6A711BC762D000462C0D /* Transitioning Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C1CB6A751BC7630E00462C0D /* CardTransitioningDelegate.swift */,
+			);
+			name = "Transitioning Delegates";
+			sourceTree = "<group>";
+		};
+		C1CB6A721BC762D600462C0D /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				C1CB6A771BC7633800462C0D /* CardTransitionAnimator.swift */,
+			);
+			name = Animators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CB6A761BC7630E00462C0D /* CardTransitioningDelegate.swift in Sources */,
+				C1CB6A741BC762F600462C0D /* CardPresentationController.swift in Sources */,
 				C19ED66A1BC63F4900AACA71 /* ViewController.swift in Sources */,
+				C19ED6961BC640FE00AACA71 /* FeedViewController.swift in Sources */,
 				C19ED6681BC63F4900AACA71 /* AppDelegate.swift in Sources */,
+				C19ED6981BC6429D00AACA71 /* DeckViewController.swift in Sources */,
+				C1DCFCAD1BC7CE6B00CE10EA /* CardViewController.swift in Sources */,
+				C1CB6A781BC7633800462C0D /* CardTransitionAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +539,7 @@
 				C19ED68E1BC63F4A00AACA71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C19ED68F1BC63F4A00AACA71 /* Build configuration list for PBXNativeTarget "DeckViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +548,7 @@
 				C19ED6911BC63F4A00AACA71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C19ED6921BC63F4A00AACA71 /* Build configuration list for PBXNativeTarget "DeckViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +557,7 @@
 				C19ED6941BC63F4A00AACA71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
